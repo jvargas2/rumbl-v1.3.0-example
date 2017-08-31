@@ -1,3 +1,8 @@
+# Docker instructions
+
+1. docker-compose run --rm --entrypoint ./setup.sh web
+2. docker-compose up
+
 # Rumbl
 
 To start your Phoenix server:
