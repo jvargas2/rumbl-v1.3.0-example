@@ -1,8 +1,7 @@
 defmodule Rumbl.User do
   use Ecto.Schema
   import Ecto.Changeset
-  import Comeonin.Bcrypt
-  alias Rumbl.User
+  import Comeonin.Argon2
 
   schema "users" do
   	field :name, :string
