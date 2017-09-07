@@ -6,6 +6,9 @@ defmodule RumblWeb.VideoController do
   alias Rumbl.Category
   alias Rumbl.Repo
 
+  require Logger
+
+  plug :scrub_params, "video" when action in [:create, :update]
   plug :load_categories when action in [:new, :create, :edit, :update]
 
   def action(conn, _) do
